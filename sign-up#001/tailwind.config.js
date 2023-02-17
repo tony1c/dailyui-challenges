@@ -3,8 +3,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        cream: "#FDFCFB",
-        gold: "#E3D2C4",
+        violet: "rgba(98,58,162,1)",
+        peach: "rgba(249,151,119,1)",
+        darkBg: "#111727",
       },
     },
   },

@@ -11,24 +11,34 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Sing up #001</title>
   </head>
-  <body>
-    <main class="h-screen bg-yellow-50 text-gray-700">
+  <body class="min-h-screen bg-[url('/images/signup-bg-1.png')] text-gray-100">
+    <main>
       <!-- Wrapper -->
       <div class="container mx-auto pt-20">
         <!-- Sign up form -->
         <form
           action="signup"
-          class="mx-auto max-w-sm space-y-4 rounded-md border-2 border-gray-700 bg-gradient-to-r from-white to-gold p-4 shadow-xl"
+          class="mx-auto max-w-sm space-y-4 rounded-md bg-darkBg p-8 shadow-xl"
         >
           <!-- Logo -->
           <img src="" alt="Logo" class="" />
           <!-- Form title -->
-          <h1 class="text-xl font-bold">Sign up with email address</h1>
+          <h1 class="text-xl font-bold">Sign up</h1>
           <!-- Email -->
           <div class="flex flex-col">
             <!-- Email label & input -->
             <label for="email" class="text-lg font-semibold">Email</label>
-            <input type="text" name="email" id="email" class="" />
+            <div
+              class="w-full rounded-md bg-gradient-to-r from-violet to-peach p-1 text-darkBg"
+            >
+              <input
+                type="text"
+                name="email"
+                id="email"
+                class="w-full rounded-sm"
+              />
+            </div>
+
             <!-- Password label & input -->
             <label for="password">Password</label>
             <input type="password" name="password" id="password" />
@@ -42,9 +52,9 @@
           </div>
           <!-- Or line -->
           <div class="relative flex items-center py-5 opacity-60">
-            <div class="flex-grow border-t border-gray-400"></div>
-            <span class="mx-4 flex-shrink text-gray-400">or</span>
-            <div class="flex-grow border-t border-gray-400"></div>
+            <div class="flex-grow border-t border-gray-100"></div>
+            <span class="mx-4 flex-shrink text-gray-100">or</span>
+            <div class="flex-grow border-t border-gray-100"></div>
           </div>
           <!-- <div class="mt-2 flex justify-center text-gray-400">
             <div class="mt-3 w-full border-t border-gray-400 opacity-70"></div>
@@ -64,18 +74,14 @@
           <input type="checkbox" name="check" id="checkbox" />
           <label for="checkbox"
             >I agree to these
-            <a href="#" class="underline underline-offset-2"
+            <a
+              href="#"
+              class="bg-gradient-to-r from-violet to-peach bg-clip-text text-transparent underline underline-offset-2 hover:decoration-peach"
               >Terms and Conditions.</a
             >
           </label>
           <!-- Sign up button -->
-          <div class="text-center">
-            <input
-              type="button"
-              value="Sign up"
-              class="w-20 cursor-pointer bg-gold"
-            />
-          </div>
+          <button type="submit" class="block text-center">Sign up</button>
           <!-- Already have an account -->
           <div class="flex flex-row">
             <p>Have an account?</p>
