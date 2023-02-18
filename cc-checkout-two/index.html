@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a38e63988f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Simple Tailwind Starter</title>
+  </head>
+  <body class="min-h-screen bg-gradient-to-b from-color1 to-color2">
+    <!-- Wrapper -->
+    <div class="flex h-screen items-center justify-center">
+      <main>
+        <form class="max-w-sm bg-white p-14">
+          <!-- Step -->
+          <div class="relative">
+            <div class="flex flex-row items-center">
+              <div class="h-5 w-5 rounded-full bg-color2"></div>
+              <div class="mr-1 w-10 border-b border-color2"></div>
+              <div
+                class="relative flex h-7 w-7 items-center justify-center rounded-full bg-color2"
+              >
+                <div
+                  class="absolute h-9 w-9 rounded-full border border-color2"
+                ></div>
+              </div>
+              <div
+                class="ml-1 w-10 border-b border-dashed border-gray-300"
+              ></div>
+              <div class="h-5 w-5 rounded-full border border-gray-300"></div>
+            </div>
+            <div
+              class="absolute -left-4 flex flex-row gap-6 text-xs text-color2"
+            >
+              <span class="">Delivery</span>
+              <span class="pt-2">Payment</span>
+              <span class="">Confirmation</span>
+            </div>
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
