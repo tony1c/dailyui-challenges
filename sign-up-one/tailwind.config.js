@@ -8,7 +8,7 @@ module.exports = {
         darkBlue: "#111727",
       },
       backgroundImage: {
-        bgImage: "url(/images/signup-bg-1.png)",
+        bgImage: "url('../images/signup-bg-1.png')",
       },
     },
   },

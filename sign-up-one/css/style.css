@@ -583,7 +583,7 @@ body {
 }
 
 .bg-bgImage {
-  background-image: url(/images/signup-bg-1.png);
+  background-image: url('../images/signup-bg-1.png');
 }
 
 .bg-gradient-to-r {
