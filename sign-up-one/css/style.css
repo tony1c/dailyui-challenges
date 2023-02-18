@@ -502,10 +502,6 @@ body {
   height: 100vh;
 }
 
-.min-h-screen {
-  min-height: 100vh;
-}
-
 .w-40 {
   width: 10rem;
 }
@@ -564,10 +560,6 @@ body {
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
-.self-center {
-  align-self: center;
-}
-
 .rounded-md {
   border-radius: 0.375rem;
 }
@@ -590,8 +582,8 @@ body {
   background-color: rgb(17 23 39 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\/images\/signup-bg-1\.png\'\)\] {
-  background-image: url('/images/signup-bg-1.png');
+.bg-bgImage {
+  background-image: url(/images/signup-bg-1.png);
 }
 
 .bg-gradient-to-r {
@@ -642,10 +634,6 @@ body {
 
 .text-center {
   text-align: center;
-}
-
-.align-middle {
-  vertical-align: middle;
 }
 
 .text-2xl {
