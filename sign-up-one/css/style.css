@@ -506,6 +506,10 @@ body {
   min-height: 100vh;
 }
 
+.min-h-full {
+  min-height: 100%;
+}
+
 .w-40 {
   width: 10rem;
 }
