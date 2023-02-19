@@ -21,11 +21,11 @@
     <!-- Wrapper -->
     <div class="flex h-screen items-center justify-center">
       <main>
-        <form class="max-w-sm rounded-md bg-white p-6">
+        <form class="max-w-md rounded-md bg-white p-6">
           <!-- Step -->
-          <div class="p-6">
-            <div class="ml-3 flex flex-row items-center">
-              <div class="h-5 w-5 rounded-full bg-color2"></div>
+          <div class="p-3">
+            <div class="flex flex-wrap items-center justify-center">
+              <div class="flex h-5 w-5 rounded-full bg-color2"></div>
               <div class="mr-1 w-14 border-b border-color2"></div>
               <div
                 class="relative flex h-7 w-7 items-center justify-center rounded-full bg-color2"
@@ -39,12 +39,14 @@
               ></div>
               <div class="h-5 w-5 rounded-full border border-gray-300"></div>
             </div>
-            <div class="flex flex-row gap-10 text-[10px] text-color2">
-              <span class="">Delivery</span>
-              <span class="pt-3">Payment</span>
-              <span class="">Confirmation</span>
-            </div>
           </div>
+          <!-- <div
+            class="flex flex-wrap justify-center gap-10 pb-4 text-[10px] text-color2"
+          >
+            <span class="">Delivery</span>
+            <span class="pt-2">Payment</span>
+            <span class="">Confirmation</span>
+          </div> -->
           <!-- Payment -->
           <div
             class="space-y-8 rounded-md border border-color3 bg-lightBg px-4 py-8 shadow-md"
@@ -58,7 +60,7 @@
             </div>
             <!-- Name on card -->
             <div class="flex flex-col">
-              <label for="card name" class="text-sm text-gray-300"
+              <label for="card name" class="text-sm text-color2"
                 >Name on card</label
               >
               <input
@@ -72,7 +74,7 @@
 
             <!-- Card number -->
             <div class="flex flex-col">
-              <label for="ccn" class="text-sm text-gray-300">Card number</label>
+              <label for="ccn" class="text-sm text-color2">Card number</label>
               <input
                 pattern="[0-9\s]{13,19}"
                 inputmode="numeric"
@@ -88,7 +90,7 @@
             <div class="flex flex-row gap-8">
               <!-- Expiry date -->
               <div class="flex flex-col">
-                <label for="expiry" class="text-sm text-gray-300"
+                <label for="expiry" class="text-sm text-color2"
                   >Expiry Date</label
                 >
                 <input
@@ -96,18 +98,18 @@
                   name="name"
                   id="name"
                   class="w-24 border-b border-b-black bg-lightBg bg-[url('../images/calendar-solid.svg')] bg-[length:10px] bg-left bg-no-repeat pl-6"
-                  placeholder="mm / yy"
+                  placeholder="mm/yy"
                 />
               </div>
               <!-- CVC -->
               <div class="flex flex-col">
-                <label for="expiry" class="text-sm text-gray-300">CVC</label>
+                <label for="expiry" class="text-sm text-color2">CVC</label>
                 <input
                   type="text"
                   name="name"
                   id="name"
                   class="w-24 border-b border-b-black bg-lightBg bg-[url('../images/lock-solid.svg')] bg-[length:10px] bg-left bg-no-repeat pl-6"
-                  placeholder="nnn"
+                  placeholder="xxx"
                 />
               </div>
             </div>
@@ -123,25 +125,25 @@
           <div class="space-y-2">
             <!-- Paypal checkout -->
             <div class="flex flex-wrap items-center justify-center gap-2">
-              <span class="text font-semibold">Continue with</span>
+              <span class="text font-semibold">Checkout with</span>
               <a
                 href="#"
-                class="transform bg-gradient-to-r from-color1 to-color2 bg-clip-text text-transparent shadow-sm duration-300 hover:scale-105 hover:shadow-xl"
+                class="transform bg-gradient-to-r from-color1 to-color2 bg-clip-text text-transparent duration-300 hover:shadow-md"
                 ><i class="fa-brands fa-cc-paypal fa-3x"></i
               ></a>
             </div>
             <!-- Total payment ammount -->
-            <h1 class="text-center text-sm">
-              Total payment ammount
-              <span class="ml-2 text-2xl text-color4">$ 0</span>
-            </h1>
+            <div class="flex flex-wrap items-center justify-center gap-4">
+              <h1 class="text-sm text-color4">Total payment ammount</h1>
+              <span class="text-2xl text-color4">$ 0</span>
+            </div>
             <!-- Button to proceed -->
             <button
               class="mx-auto block rounded-full bg-gradient-to-r from-color1 to-color2 p-1"
             >
               <span
-                class="block rounded-full bg-white px-4 py-2 font-semibold text-black shadow-sm transition hover:bg-transparent hover:text-white hover:shadow-xl"
-                >Proceed to checkout</span
+                class="block rounded-full bg-white px-4 py-2 font-semibold text-color4 text-transparent shadow-sm transition hover:bg-transparent hover:text-white hover:shadow-xl"
+                >Proceed to confirm</span
               >
             </button>
           </div>
