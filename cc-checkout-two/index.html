@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>CC checkout #002</title>
   </head>
-  <body class="min-h-screen bg-gradient-to-b from-color1 to-color2 text-color3">
+  <body class="bg-gradient-to-b from-color1 to-color2 text-color3">
     <!-- Wrapper -->
     <div class="flex h-screen items-center justify-center">
       <main>
@@ -77,7 +77,7 @@
                 type="text"
                 name="name"
                 id="name"
-                class="border-b border-b-black bg-lightBg bg-[url('../images/user-solid.svg')] bg-[length:10px] bg-left bg-no-repeat pl-6"
+                class="border-b border-b-color3 bg-lightBg bg-[url('../images/user-solid.svg')] bg-[length:10px] bg-left bg-no-repeat pl-6"
                 placeholder="John Doe"
               />
             </div>
@@ -93,7 +93,7 @@
                 type="tel"
                 name="number"
                 id="ccn"
-                class="border-b border-b-black bg-lightBg bg-[url('../images/credit-card-solid.svg')] bg-[length:10px] bg-left bg-no-repeat pl-6"
+                class="border-b border-b-color3 bg-lightBg bg-[url('../images/credit-card-solid.svg')] bg-[length:10px] bg-left bg-no-repeat pl-6"
                 placeholder="XXXX XXXX XXXX XXXX"
               />
             </div>
@@ -105,9 +105,9 @@
                 >
                 <input
                   type="text"
-                  name="name"
-                  id="name"
-                  class="w-24 border-b border-b-black bg-lightBg bg-[url('../images/calendar-solid.svg')] bg-[length:10px] bg-left bg-no-repeat pl-6"
+                  name="expiry"
+                  id="expiry"
+                  class="w-24 border-b border-b-color3 bg-lightBg bg-[url('../images/calendar-solid.svg')] bg-[length:10px] bg-left bg-no-repeat pl-6"
                   placeholder="mm/yy"
                 />
               </div>
@@ -116,9 +116,9 @@
                 <label for="expiry" class="text-sm text-color2">CVC</label>
                 <input
                   type="text"
-                  name="name"
-                  id="name"
-                  class="w-24 border-b border-b-black bg-lightBg bg-[url('../images/lock-solid.svg')] bg-[length:10px] bg-left bg-no-repeat pl-6"
+                  name="cvc"
+                  id="cvc"
+                  class="w-24 border-b border-b-color3 bg-lightBg bg-[url('../images/lock-solid.svg')] bg-[length:10px] bg-left bg-no-repeat pl-6"
                   placeholder="xxx"
                 />
               </div>
@@ -132,7 +132,7 @@
             <div class="flex-grow border-t border-gray-500"></div>
           </div>
           <!-- Continue.. -->
-          <div class="space-y-2">
+          <div class="space-y-4">
             <!-- Paypal checkout -->
             <div class="flex flex-wrap items-center justify-center gap-2">
               <span class="text font-semibold">Checkout with</span>
@@ -142,9 +142,13 @@
                 ><i class="fa-brands fa-cc-paypal fa-3x"></i
               ></a>
             </div>
+            <!-- Line -->
+            <div class="border border-t-gray-500 opacity-60"></div>
             <!-- Total payment ammount -->
             <div class="flex flex-wrap items-center justify-center gap-4">
-              <h1 class="text-sm text-color4">Total payment ammount</h1>
+              <h1 class="text-sm font-semibold italic text-color4">
+                Total payment ammount
+              </h1>
               <span class="text-2xl text-color4">$ 0</span>
             </div>
             <!-- Button to proceed -->
